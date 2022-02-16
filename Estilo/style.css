@@ -4,7 +4,7 @@ body{
 }
 
 h1{
-    color:blueviolet;
+    color:red;
     font-size: 70px;
     text-align: center;
 }
@@ -12,12 +12,12 @@ h1{
 p{
     color: aliceblue;
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h2{
     color: red;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 ol{
@@ -36,4 +36,20 @@ img{
     width: 400px;
     height: 300px;
     border: 1px solid aliceblue;
+}
+
+#navScroll{
+    background-color: green;
+}
+
+#top3{
+    color: black;
+}
+
+#aguardados{
+    color: black;
+}
+
+#top{
+    color: black;
 }

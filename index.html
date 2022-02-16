@@ -1,3 +1,4 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <!DOCTYPE html>
 
 <html>
@@ -17,54 +18,33 @@
 
   <body>
 
-    <audio src = "assets/music/song.mp3" autoplay loop controls>
-      <p>Nao suportado</p>
-    </audio>
+    <nav  id="navScroll" class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a id="top" class="navbar-brand" href="index.html">Top Filmes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a id="top3" class="nav-link" href="top3.html">Top 3 Favoritos</a>
+            </li>
+            <li class="nav-item">
+              <a id="aguardados" class="nav-link" href="aguardados.html">Filmes Aguardados</a>
+            </li>
+          </ul>
+        </div>
+        <audio src = "assets/music/song.mp3" autoplay loop controls></audio>
+      </div>
+    </nav>
+
+    <br>
 
     <h1>Top 3 Filmes favoritos e aguardados para 2022</h1>
 
+    <br>
+
     <p>Essa lista apresenta filmes que nunca enjoo de ver  e filmes que estou economizando para assistir no próximo ano... Se a pandemia deixar</p>
-
-    <h2>Top 3 filmes favoritos</h2>
-
-        <ol>
-    
-          <li>Fragmentado</li>
-
-          <img src="https://iaragiraldipsicologa.files.wordpress.com/2017/04/fragmentado.jpg"/>
-    
-          <li>Piratas do Caribe: No Fim do Mundo</li>
-
-          <img src="https://br.web.img3.acsta.net/pictures/210/176/21017697_20130704202238456.jpg"/>
-    
-          <li>Todo Mundo em Pânico</li>
-
-          <img src="https://upload.wikimedia.org/wikipedia/pt/d/d8/ScaryMovie.jpg"/>
-    
-    
-        </ol>
-    
-    <h2>Filmes que aguardo para 2022</h2>
-
-      <ul>
-
-        <li>Doutor Estranho no Multiverso da Loucura</li>
-
-        <img src="https://disneyplusbrasil.com.br/wp-content/uploads/2021/04/Doutor-Estranho-2-1024x576.jpg"/>
-
-        <li>Thor: Love and Thunder</li>
-
-        <img src="https://br.web.img2.acsta.net/newsv7/21/07/08/16/11/2389033.jpg"/>
-
-        <li>Mercenários 4</li>
-
-        <img src="https://media.fstatic.com/o2iHg3JDjJOOimUWRVmT0cdmNYg=/210x312/smart/media/movies/covers/2021/10/EX4.jpg"/>
-
-        <li>Adão Negro</li>
-
-        <img src="https://www.centralcomics.com/wp-content/uploads/2021/03/Black-Adam_cast.jpg"/>
-
-      </ul>
 
   </body>
 
