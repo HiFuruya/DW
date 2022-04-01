@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semana 11</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+    <script>
+
+      function calcularAreas() {
+
+        let raio = Number(document.getElementById("raio").value);
+        let altura = Number(document.getElementById("altura").value);
+
+        let calculaAreaCirculo = function (raio) {
+          return 3.14 * (raio * raio);
+        };
+
+        let calculaAreaCilindro = function (raio, altura) {
+          return (2 * (3.14 * (raio * raio))) + (2 * 3.14 * raio * altura);
+        };
+
+        alert("A área do Circulo é: "+calculaAreaCirculo(raio)+"\n"+"A área do Cilindro é: "+calculaAreaCilindro(raio, altura));
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-3">
+          <input
+            type="text"
+            class="form-control"
+            id="raio"
+            aria-describedby="raio"
+            placeholder="Digite o raio"
+          />
+        </div>
+        <div class="col-3">
+          <input
+            type="text"
+            class="form-control"
+            id="altura"
+            aria-describedby="altura"
+            placeholder="Digite a altura"
+          />
+        </div>
+        <div class="col-2">
+          <button type="submit" class="btn btn-primary" onclick="calcularAreas()">
+            Calcular
+          </button>
+        </div>
+      </div>
+  </body>
+</html>
